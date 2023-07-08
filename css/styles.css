@@ -8,6 +8,7 @@
     --hover-accent: #404BBF;
     --text-color: #434455;
     --additional-light-cl: #F4F4FD;
+    --border: #8E8F99;
 }
 
 *,
@@ -135,9 +136,7 @@ border-bottom: 1px solid var(--cornflower, #E7E9FC);
 
     
 }
-.list {
-    padding: 24px 0;
-}
+
 .header-item {
     
     
@@ -193,6 +192,14 @@ border-bottom: 1px solid var(--cornflower, #E7E9FC);
 .hero-section {
     background-color: var(--main-dark-bg);
     padding: 188px 0;
+    background-image: linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.70),
+            rgba(46, 47, 66, 0.70)), url(..//images/peopleoffice.jpg);
+    background-position: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .hero-hero{
@@ -232,6 +239,36 @@ border-bottom: 1px solid var(--cornflower, #E7E9FC);
 
 /* Features section */
 
+.features-icon-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    width: 264px;
+    gap: 24px;
+    background-color: var(--additional-light-cl);
+    border-radius: 4px;
+    margin: 8px 0;
+    padding: 24px 100px;
+}
+
+.feature-icon{
+}
+
+
+
+.features-icon-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 100px;
+    border-radius: 4px;
+    background-color: var(--additional-light-cl);
+    width: 264px;
+    height: 112px;
+}
+
+
 .features-section {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -262,6 +299,12 @@ border-bottom: 1px solid var(--cornflower, #E7E9FC);
 .features-item {
     width: calc((100%-3*24px)/4);
 }
+
+.features-icon{
+
+}
+
+
 .subtitle {
     
 }
@@ -337,6 +380,43 @@ border-bottom: 1px solid var(--cornflower, #E7E9FC);
 .team-position {
     text-align: center;
 }
+
+
+.client-section {
+    padding: 120px 0;
+}
+.container {
+}
+.clients-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.clients-item {
+}
+.list {
+}
+.clients-link {
+    display: flex;
+    width: 168px;
+    height: 88px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+}
+
+.clients-link:hover{
+    border-color: var(--hover-accent);
+}
+
+.clients-link:hover .clients-icon{
+    fill: var(--hover-accent);
+}
+
+.clients-icon {
+}
+
 
 /* Footer section */
 
